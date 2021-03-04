@@ -9,14 +9,10 @@ public class Config extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        initialize();
-    }
-
-    private void initialize(){
         mCtx = getApplicationContext();
     }
 
-    public Context getAppContext(){
+    public static Context getAppContext(){
         return mCtx;
     }
 }
