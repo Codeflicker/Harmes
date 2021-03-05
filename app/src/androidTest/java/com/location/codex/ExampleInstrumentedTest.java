@@ -1,4 +1,4 @@
-package com.harmes.codex;
+package com.location.codex;
 
 import android.content.Context;
 

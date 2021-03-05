@@ -1,9 +1,8 @@
-package com.harmes.codex.main.locationEngine;
+package com.harmes.engine.location;
 
 import android.app.Activity;
 import android.content.IntentSender;
 import android.os.Looper;
-import android.util.Log;
 import androidx.annotation.NonNull;
 import com.google.android.gms.common.api.ResolvableApiException;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -19,6 +18,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
 public class LocationEngine {
+
     private static final String TAG = LocationEngine.class.getSimpleName();
     private static final long UPDATE_INTERVAL_IN_MILLISECONDS = 10000;
     private static final long FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS = UPDATE_INTERVAL_IN_MILLISECONDS / 2;

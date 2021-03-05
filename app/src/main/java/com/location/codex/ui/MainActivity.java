@@ -1,15 +1,16 @@
-package com.harmes.codex.ui;
+package com.location.codex.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.harmes.codex.R;
-import com.harmes.codex.main.locationEngine.LocationEngine;
+import com.harmes.engine.location.LocationEngine;
+import com.location.codex.R;
 
 public class MainActivity extends AppCompatActivity {
 
     private LocationEngine engine;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

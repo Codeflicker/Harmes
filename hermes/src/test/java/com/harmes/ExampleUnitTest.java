@@ -1,4 +1,4 @@
-package com.harmes.codex;
+package com.harmes;
 
 import org.junit.Test;
 

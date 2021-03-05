@@ -1,4 +1,4 @@
-package com.harmes.codex.main.locationEngine;
+package com.harmes.engine.location;
 
 import android.app.Activity;
 import android.location.Address;
@@ -6,14 +6,11 @@ import android.location.Geocoder;
 import android.location.Location;
 import android.util.Log;
 
-import com.harmes.codex.config.Config;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
 public class LocationAddress {
-
 
     public static void getLocationAddress(Location location, Activity activity){
         try {
