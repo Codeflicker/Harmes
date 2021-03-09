@@ -3,7 +3,7 @@ package com.location.codex.config;
 import android.app.Application;
 import android.content.Context;
 
-public class Config extends Application {
+public class AppConfig extends Application {
 
     private static Context mCtx;
     @Override

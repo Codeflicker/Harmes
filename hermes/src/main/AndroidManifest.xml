@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.harmes">
+    <application>
+        <receiver android:name=".engine.receiver.LocationAlarmReceiver"/>
+    </application>
 
 </manifest>
