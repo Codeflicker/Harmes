@@ -1,6 +1,7 @@
 package com.harmes.engine.location;
 
 import android.app.Activity;
+import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -11,9 +12,9 @@ import java.util.Locale;
 
 public class LocationAddress {
 
-    public static void getLocationAddress(Location location, Activity activity){
+    public static void getLocationAddress(Location location, Context context){
         try {
-            Geocoder geocoder = new Geocoder(activity, Locale.getDefault());
+            Geocoder geocoder = new Geocoder(context, Locale.getDefault());
             List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1); // Here 1 represent max location result to returned, by documents it recommended 1 to 5
             String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
             String city = addresses.get(0).getLocality();
